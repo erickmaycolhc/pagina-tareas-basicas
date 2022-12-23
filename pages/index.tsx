@@ -12,9 +12,9 @@ export default function Home() {
         "Content-Type": "application/json",
       },
     };
-    const url = "http://localhost:3000/api/task";
+    const urlApi = process.env.HOST_NAME_API + "/task";
 
-    fetch(url, config)
+    fetch(urlApi, config)
       .then((gggg: any) => {
         return gggg.json();
       })

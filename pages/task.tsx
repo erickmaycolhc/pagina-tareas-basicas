@@ -110,7 +110,7 @@ export default function Task() {
       },
       body: JSON.stringify(objApi),
     };
-    const urlApi = "http://localhost:3000/api/task";
+    const urlApi = process.env.HOST_NAME_API + "/task";
 
     fetch(urlApi, config)
       .then((responsesText: any) => {
