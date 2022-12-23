@@ -12,14 +12,13 @@ export default function Home() {
         "Content-Type": "application/json",
       },
     };
-    const urlApi = "http://localhost:3000/api/task";
+    const url = "http://localhost:3000/api/task";
 
-    fetch(urlApi, config)
-      .then((responsesText: any) => {
-        return responsesText.json();
+    fetch(url, config)
+      .then((gggg: any) => {
+        return gggg.json();
       })
       .then((response: any) => {
-        console.log("dddd ==> ", response);
         setTask(response.data);
       });
 
@@ -32,13 +31,13 @@ export default function Home() {
         {task.map((element) => {
           const { id, title, description } = element;
           return (
-            <div className="father">
+            <div className="father" key={id}>
               <div className="main-0">
                 <h1>{id}</h1>
               </div>
               <div className="main-1">
-                <text className="zaa">{title}</text>
-                <text className="zee">{description}</text>
+                <p className="zaa">{title}</p>
+                <p className="zee">{description}</p>
               </div>
               <div className="main-2">
                 <button className="boton">🗑️ Delete</button>
