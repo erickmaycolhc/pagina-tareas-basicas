@@ -12,3 +12,12 @@ export const getListTask = async () => {
     console.log(error);
   }
 };
+export const saveTask = async (title: string, description: string) => {
+  const query = `INSERT INTO task(title, description)
+                          VALUES ($1, $2) `;
+
+  const value = [title, description];
+
+  const rpt = await db.conn.query(query, value);
+  return rpt.rows;
+};

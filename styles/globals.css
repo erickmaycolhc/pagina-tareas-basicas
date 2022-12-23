@@ -99,3 +99,144 @@ body {
   font-weight: 750;
   background-color: #13b781;
 }
+/* .father-succes {
+  background-color: yellow;
+} */
+
+.father-succes {
+  background-color: #384152;
+  width: 550px;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+
+.father {
+  background-color: #384152;
+  width: 550px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  justify-content: center;
+  display: flex;
+  height: 100px;
+}
+.mother {
+  background-color: #384152;
+  width: 550px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+}
+.main-logo {
+  display: block;
+  padding: 15px 40px;
+  color: white;
+}
+.main-logo a {
+  text-decoration: none;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main-title {
+  display: block;
+  padding: 15px 40px;
+}
+.main-title input {
+  padding: 12px 15px;
+  width: 400px;
+  background-color: #21283a;
+  color: rgb(164, 159, 159);
+}
+.main-description {
+  display: block;
+  padding: 15px 40px;
+}
+.main-description textarea {
+  padding: 15px 15px;
+  width: 400px;
+  height: 50px;
+  background-color: #21283a;
+  color: white;
+}
+.boton-succes {
+  display: block;
+  padding: 30px 40px;
+}
+.boton-succes a {
+  background-color: #15bb87;
+  color: rgb(230, 236, 242);
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 10px 15px;
+  margin-top: 0px 20px;
+}
+
+.main-0 {
+  /* background-color: red; */
+  width: 100px;
+}
+.main-0 h1 {
+  padding: 15px 40px;
+  color: white;
+}
+
+.main-1 {
+  /* background-color: yellow; */
+  width: 250px;
+}
+.main-1 text {
+  display: block;
+  padding: 1px 0px;
+  color: white;
+  margin-top: 10px;
+}
+.main-1 .raa {
+  margin-top: 20px;
+}
+.main-1 .rre {
+  margin-left: 10px 10px;
+}
+.main-2 {
+  /* background-color: blue; */
+  width: 150px;
+  margin-top: 15px;
+}
+.main-2 button {
+  margin: 15px 0px;
+  color: white;
+  background-color: rgb(142, 20, 20);
+  height: 32px;
+  border-radius: 7px;
+}
+
+.style-fond {
+  background-color: red;
+}
+
+.error-block {
+  margin-left: 700px;
+  width: 300px;
+}
+.grup-div {
+  /* background-color: green; */
+  width: 350px;
+}
+.color-1 {
+  color: white;
+}
+.color-2 {
+  color: white;
+}
+h3 {
+  color: white;
+}
+.espacio {
+  background-color: yellow;
+  height: 5px;
+}
+
+.dios {
+  margin-bottom: 100px;
+}
