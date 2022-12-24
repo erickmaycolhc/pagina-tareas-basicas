@@ -41,8 +41,6 @@ const getLitApi = async (
   try {
     const regresoDato = await getListTask();
 
-    console.log("gggggg ------> ", regresoDato);
-
     response.status(200).json({
       field: 200,
       message: "Salio perfecto",
@@ -60,12 +58,11 @@ const save = async (
   request: NextApiRequest,
   response: NextApiResponse<Response>
 ) => {
-  console.log("123");
   try {
     const { title, description } = request.body;
-    console.log("456");
+
     const responseDB = await saveTask(title, description);
-    console.log("10");
+
     response.status(200).json({
       field: 200,
       message: "Salio perfecto",
