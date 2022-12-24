@@ -8,9 +8,7 @@ export const getListTask = async () => {
 
     const response = await db.conn.query(query);
     return response.rows;
-  } catch (error) {
-    console.log(error);
-  }
+  } catch (error) {}
 };
 export const saveTask = async (title: string, description: string) => {
   const query = `INSERT INTO task(title, description)

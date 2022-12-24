@@ -102,7 +102,7 @@ export default function Task() {
       title: tarea.titulo,
       description: tarea.description,
     };
-    //console.log("objApi ==> ", objApi);
+
     const config: any = {
       method: "POST",
       headers: {
@@ -114,11 +114,9 @@ export default function Task() {
 
     fetch(urlApi, config)
       .then((responsesText: any) => {
-        console.log("responsesText ==> ", responsesText);
         return responsesText.json();
       })
       .then((response: any) => {
-        console.log("dddd ==> ", response);
         router.push("/");
       });
   };

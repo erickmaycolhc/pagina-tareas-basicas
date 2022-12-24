@@ -8,8 +8,6 @@ export default function Home() {
   const [task, setTask] = useState([]);
   useEffect(() => {
     loadData();
-
-    //console.log(dbTask.listTask())
   }, []);
   const loadData = () => {
     const config: any = {
@@ -19,13 +17,12 @@ export default function Home() {
       },
     };
     const urlApi = process.env.HOST_NAME_API + "/task";
-    console.log("urlApi ==> ", urlApi);
+
     fetch(urlApi, config)
       .then((responsesText: any) => {
         return responsesText.json();
       })
       .then((response: any) => {
-        console.log("dddd ==> ", response);
         setTask(response.data);
       });
   };
@@ -47,11 +44,10 @@ export default function Home() {
   //       setTask(response.data);
   //     });
 
-  //   //console.log(dbTask.listTask())
   // }, []);
   const handlerDelete = (id: string) => {
     // TODO: Eliminando tarea
-    console.log("handlerDelete ==>", id);
+
     const config: any = {
       method: "DELETE",
       headers: {
@@ -65,7 +61,6 @@ export default function Home() {
         return responsesText.json();
       })
       .then((response: any) => {
-        console.log("dddd ==> ", response);
         loadData();
       });
   };

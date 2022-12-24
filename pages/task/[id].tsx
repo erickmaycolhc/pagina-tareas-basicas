@@ -78,7 +78,7 @@ export default function TaskUpdate() {
       title: tarea.title,
       description: tarea.description,
     };
-    //console.log("objApi ==> ", objApi);
+
     const config: any = {
       method: "PUT",
       headers: {
@@ -87,15 +87,12 @@ export default function TaskUpdate() {
       body: JSON.stringify(objApi),
     };
     const urlApi = process.env.HOST_NAME_API + "/task/" + tarea.id;
-    console.log("urlApi ==> ", urlApi);
 
     fetch(urlApi, config)
       .then((responsesText: any) => {
-        console.log("responsesText ==> ", responsesText);
         return responsesText.json();
       })
       .then((response: any) => {
-        console.log("dddd ==> ", response);
         router.push("/");
       });
   };
@@ -114,15 +111,12 @@ export default function TaskUpdate() {
         return responsesText.json();
       })
       .then((response: any) => {
-        console.log("mostrar dato del id ==> ", response.data);
-
         setTarea(response.data);
       });
   };
 
   useEffect(() => {
     if (typeof router.query.id === "string") {
-      console.log("query.id ==> ", router.query.id);
       loadData(router.query.id);
     }
   }, [router.query]);
