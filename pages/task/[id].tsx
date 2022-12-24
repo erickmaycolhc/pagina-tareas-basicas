@@ -134,11 +134,11 @@ export default function TaskUpdate() {
           </div>
 
           <div className="father-succes">
-            <div className="main-logo">Actualizar Task</div>
+            <div className="main-logo">Actualizar Raza</div>
             <div className="main-title">
               <input
                 type="text"
-                placeholder="Titulo"
+                placeholder="Ingresar Raza"
                 value={tarea.title}
                 onChange={(e) => {
                   handlerTitulo(e);
@@ -147,7 +147,7 @@ export default function TaskUpdate() {
             </div>
             <div className="main-description">
               <textarea
-                placeholder="Write a description"
+                placeholder="Ingresa nombre del perrito"
                 value={tarea.description}
                 onChange={(e) => {
                   handlerDescription(e);

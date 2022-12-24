@@ -76,7 +76,7 @@ export default function Home() {
           return (
             <div className="father" key={id}>
               <img
-                src="https://economipedia.com/wp-content/uploads/Taylor.jpg"
+                src="https://www.elespectador.com/resizer/fAVJqvTeFKrKvkJzRnyGHVRf2ao=/920x613/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/XQ5OB4SRZ5B5LD7S7QIRCLHTVY.jpg"
                 width={100}
                 height={100}
                 alt=""

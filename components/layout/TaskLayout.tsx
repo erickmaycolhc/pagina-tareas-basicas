@@ -10,12 +10,12 @@ export default function TaskLayout({ children }: Props) {
         <div className="centro">
           <div className="izquierda">
             <Link href={"/"} className="boton izquierdo">
-              Task App
+              Perrito App
             </Link>
           </div>
           <div className="derecha">
             <Link href={"task"} className="boton derecho">
-              + Add Task
+              + Add Perrito
             </Link>
           </div>
         </div>
