@@ -74,7 +74,7 @@ const updateTask = async (
   try {
     const { title, description } = request.body;
 
-    const responseDB = await updateTaskDB(id, title, description);
+    const response = await updateTaskDB(id, title, description);
 
     response.status(200).json({
       field: 200,
