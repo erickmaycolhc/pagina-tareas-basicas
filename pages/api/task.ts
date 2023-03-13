@@ -10,10 +10,6 @@ type Response = {
   field: number;
   message: string;
   data?: Data;
-  // edad: any;
-  // ciudad: string;
-  // dirrecion: string;
-  // telefono: number;
 };
 
 export default async function Task(

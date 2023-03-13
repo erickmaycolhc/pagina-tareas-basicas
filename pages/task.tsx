@@ -1,29 +1,3 @@
-// import TaskLayout from "../components/layout/TaskLayout";
-
-// export default function Task() {
-//   return (
-//     <>
-//       <TaskLayout>
-//         <div className="goku">
-//           <div className="midel">
-//             <div className="gohan">Create a Task</div>
-//             <div className="raa">
-//               <input type="text" placeholder=" White a title"></input>
-//             </div>
-//             <div className="ree">
-//               <textarea placeholder="White a description"></textarea>
-//             </div>
-//             <div className="rii">
-//               <button className="botol" type="submit">
-//                 Enviar
-//               </button>
-//             </div>
-//           </div>
-//         </div>
-//       </TaskLayout>
-//     </>
-//   );
-// }
 import { useRouter } from "next/router";
 import { useState } from "react";
 import TaskLayout from "../components/layout/TaskLayout";
@@ -58,7 +32,7 @@ export default function Task() {
     });
   };
 
-  const subiDiv = (e: any) => {
+  const submitRegistrar = (e: any) => {
     //e.prevenDefault();
     e.preventDefault();
 
@@ -124,7 +98,7 @@ export default function Task() {
   return (
     <>
       <TaskLayout>
-        <form onSubmit={(e) => subiDiv(e)}>
+        <form onSubmit={(e) => submitRegistrar(e)}>
           <div className="error-block">
             <ul className="style-fond">
               {error.map((err) => {
@@ -163,17 +137,6 @@ export default function Task() {
           <hr />
         </div>
       </TaskLayout>
-      {data === true ? (
-        <>
-          <div className="grup-div">
-            <h3>Resultados</h3>
-            <div>
-              <div className="color-1">tarea: {tarea?.titulo}</div>
-              <div className="color-2">description: {tarea?.description}</div>
-            </div>
-          </div>
-        </>
-      ) : null}
     </>
   );
 }

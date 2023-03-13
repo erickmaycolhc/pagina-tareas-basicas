@@ -39,7 +39,7 @@ const deleteTask = async (
   request: NextApiRequest,
   response: NextApiResponse<Response>
 ) => {
-  const { id } = request.query;
+  const { id }:any = request.query;
 
   try {
     // TODO: Consultamos si existe el ID de la tarea
@@ -69,7 +69,7 @@ const updateTask = async (
   request: NextApiRequest,
   response: NextApiResponse<Response>
 ) => {
-  const { id } = request.query;
+  const { id }:any = request.query;
 
   try {
     const { title, description } = request.body;
@@ -92,7 +92,7 @@ const getByIdTask = async (
   request: NextApiRequest,
   response: NextApiResponse<Response>
 ) => {
-  const { id } = request.query;
+  const { id }:any = request.query;
 
   try {
     // TODO: Consultamos si existe el ID de la tarea

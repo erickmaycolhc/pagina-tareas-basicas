@@ -20,7 +20,7 @@ export default function TaskUpdate() {
     description: "",
   });
   const [error, setError] = useState<Ierror[]>([]);
-  const [data, setData] = useState();
+  const [data, setData]:any = useState();
   const handlerTitulo = (e: any) => {
     setTarea({
       ...tarea,
