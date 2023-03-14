@@ -3,11 +3,11 @@ let conn;
 
 if (!conn) {
   conn = new Pool({
-    user: "postgres",
-    password: "romantico",
-    host: "localhost",
-    port: 5432,
-    database: "TaskDB",
+    user: process.env.PG_USER,
+    password: process.env.PG_PASSWORD,
+    host: process.env.PG_HOST,
+    port: parseInt(process.env.PG_PORT || ""),
+    database: process.env.PG_DATABASE,
   });
 }
 
