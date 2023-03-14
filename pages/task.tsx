@@ -108,11 +108,11 @@ export default function Task() {
           </div>
 
           <div className="father-succes">
-            <div className="main-logo">Ingresa detalles del Perrito</div>
+            <div className="main-logo">Ingresa detalles de la tarea</div>
             <div className="main-title">
               <input
                 type="text"
-                placeholder="Ingresar Raza"
+                placeholder="Ingresar la Tarea"
                 onChange={(e) => {
                   handlerTitulo(e);
                 }}
@@ -120,7 +120,7 @@ export default function Task() {
             </div>
             <div className="main-description">
               <textarea
-                placeholder="Ingresa nombre del perrito"
+                placeholder="Ingresa descripción de la tarea"
                 onChange={(e) => {
                   handlerDescription(e);
                 }}
