@@ -54,7 +54,6 @@ export default function Home() {
   return (
     <>
       <TaskLayout>
-<<<<<<< HEAD
         {task !== undefined ? (
           task.map((element) => {
             const { id, title, description } = element;
@@ -81,20 +80,6 @@ export default function Home() {
                     Actualizar
                   </button>
                 </div>
-=======
-        {task.map((element) => {
-          const { id, title, description } = element;
-          return (
-            <div className="father" key={id}>
-              <img
-                src="https://www.elespectador.com/resizer/fAVJqvTeFKrKvkJzRnyGHVRf2ao=/920x613/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/XQ5OB4SRZ5B5LD7S7QIRCLHTVY.jpg"
-                width={100}
-                height={100}
-                alt=""
-              />
-              <div className="main-0">
-                <h1>{id}</h1>
->>>>>>> 535cfd99da9cf848e1e652b87bcbe5ce3fa50cd8
               </div>
             );
           })
