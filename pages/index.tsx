@@ -60,7 +60,7 @@ export default function Home() {
             return (
               <div className="father" key={id}>
                 <img
-                  src="https://economipedia.com/wp-content/uploads/Taylor.jpg"
+                  src="https://blog.flota.es/wp-content/uploads/2018/06/Edades-recomendadas-para-iniciar-a-tus-hijos-en-las-tareas-del-hogar.jpg"
                   width={100}
                   height={100}
                   alt=""
